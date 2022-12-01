@@ -1,0 +1,10 @@
+class Solution {
+    public int solution(int[] a, int[] b) {
+        int answer = 0;
+        int cnt = a.length;
+        for(int i=0; i<cnt; i++){
+            answer = answer + a[i]*b[i];
+        }
+        return answer;
+    }
+}

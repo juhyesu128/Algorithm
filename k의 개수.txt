@@ -1,0 +1,16 @@
+class Solution {
+    public int solution(int i, int j, int k) {
+        int answer = 0;
+        String str = "";
+        for(int x=i; x<=j; x++){
+            str += x + "";
+        }
+        String[] arr = str.split("");
+        for(int x=0; x<arr.length; x++){
+            if(arr[x].equals(k+"")){
+                answer++;
+            }            
+        }
+        return answer;
+    }
+}

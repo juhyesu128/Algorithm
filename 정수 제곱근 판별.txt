@@ -1,0 +1,16 @@
+class Solution {
+    public long solution(long n) {
+        long answer = 0;
+        long i=0;
+        while (i*i<=n){
+            i++;
+            if(i*i==n){
+                i++;
+                answer = i*i;
+            }else{
+                answer =  -1;
+            }
+        }
+        return answer;
+    }
+}

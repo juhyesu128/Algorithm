@@ -1,0 +1,13 @@
+class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        int max = 0;
+        for(int i=1; i<=6 && i<=n ; i++){
+            if(6%i==0 && n%i==0){
+                max = i;
+            }
+        }
+        answer = (n*6)/max/6;
+        return answer;
+    }
+}
